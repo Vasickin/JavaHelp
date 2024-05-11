@@ -1,8 +1,9 @@
 package help;
 
 public class Help {
+
     public static void main(String[] args)
-        throws java.io.IOException{
+            throws java.io.IOException {
 
         char choice;
 
@@ -16,18 +17,30 @@ public class Help {
 
         switch (choice) {
             case '1' -> {
-            System.out.println("Инструкция if:");
-            System.out.println("if (условие) {");
-            System.out.println("  инструкция;");
-            System.out.println("}");
-            System.out.println("else {");
-            System.out.println("  инструкция;");
-            System.out.println("}");
+                System.out.println("Инструкция if:");
+                System.out.println();
+                System.out.println("if (условие) {");
+                System.out.println("  инструкция;");
+                System.out.println("}");
+                System.out.println("else {");
+                System.out.println("  инструкция;");
+                System.out.println("}");
+            }
+            case '2'-> {
+                System.out.println("Инструкция switch:");
+                System.out.println();
+                System.out.println("switch (выражение) {");
+                System.out.println("  case константа -> {");
+                System.out.println("    последовательность инструкций;");
+                System.out.println("  }");
+                System.out.println("  default -> {");
+                System.out.println("  последовательность инструкций;");
+                System.out.println("  }");
+                System.out.println("}");
             }
             default -> {
             }
-            
+
         }
     }
 }
-
