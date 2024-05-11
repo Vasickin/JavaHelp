@@ -15,17 +15,18 @@ public class Help {
         System.err.println("\n");
 
         switch (choice) {
-            case '1':
-                System.err.println("Инструкция if:\n");
-                System.err.println("if(условие) {");
-                System.err.println("  инструкция;");
-                System.err.println("}");
-                System.err.println("else {");
-                System.err.println("  инструкция;");
-                System.err.println("}");
-                break;
-            default:
-                throw new AssertionError();
+            case '1' -> {
+            System.out.println("Инструкция if:");
+            System.out.println("if (условие) {");
+            System.out.println("  инструкция;");
+            System.out.println("}");
+            System.out.println("else {");
+            System.out.println("  инструкция;");
+            System.out.println("}");
+            }
+            default -> {
+            }
+            
         }
     }
 }
