@@ -5,6 +5,7 @@ public class Help {
     public static void main(String[] args)
             throws java.io.IOException {
 
+
         char choice;
 
         System.out.println("Справка:");
@@ -13,12 +14,11 @@ public class Help {
         System.out.print("Выбирите: ");
         choice = (char) System.in.read();
 
-        System.err.println("\n");
+        System.out.println("\n");
 
         switch (choice) {
             case '1' -> {
-                System.out.println("Инструкция if:");
-                System.out.println();
+                System.out.println("Инструкция if:\n");
                 System.out.println("if (условие) {");
                 System.out.println("  инструкция;");
                 System.out.println("}");
@@ -27,8 +27,7 @@ public class Help {
                 System.out.println("}");
             }
             case '2'-> {
-                System.out.println("Инструкция switch:");
-                System.out.println();
+                System.out.println("Инструкция switch:\n");
                 System.out.println("switch (выражение) {");
                 System.out.println("  case константа -> {");
                 System.out.println("    последовательность инструкций;");
@@ -39,6 +38,7 @@ public class Help {
                 System.out.println("}");
             }
             default -> {
+                System.out.println("Запрос не найден!");
             }
 
         }
